@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/todo_list/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/bin/python3.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/python/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -23,18 +38,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1X6GiY8hq9nRs3QxB7quAUU7S7E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/todo_list" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,14 +72,24 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="31" key="SettingsEditor" timestamp="1580362871365">
+    <state x="205" y="31" key="SettingsEditor" timestamp="1580622209852">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1580362871365" />
-    <state x="364" y="128" width="704" height="536" key="find.popup" timestamp="1580376523828">
+    <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1580622209852" />
+    <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1580620999233">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="364" y="128" width="704" height="536" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1580376523828" />
+    <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1580620999233" />
+    <state x="364" y="128" width="704" height="536" key="find.popup" timestamp="1580627380097">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="364" y="128" width="704" height="536" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1580627380097" />
   </component>
 </project>
