@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+#we need to register it with our Django project "todo_list". Add your app name
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -122,3 +123,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
     ]
+
+# The settings file in Django, holds all the settings of your web app. It includes the secret key, templates directories,
+# middlewares (security), static files (css,js), database settings and so on. Every Django project must have a settings
+# file. By convention, Django puts it in your website app, but it doesn’t have to live there. There are proponents for
+# other structures, but here we’re going to stick to the default.

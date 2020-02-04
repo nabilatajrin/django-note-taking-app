@@ -1,0 +1,1 @@
+#The __init__.py file tells Python that this folder (your Django app) is a Python package.

@@ -1,3 +1,5 @@
+#This is where the models for your app are located.
+
 from django.db import models
 
 class List(models.Model):

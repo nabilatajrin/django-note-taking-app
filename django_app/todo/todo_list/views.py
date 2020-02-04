@@ -1,3 +1,9 @@
+# views.py is where the views for your app are located.
+
+# A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response.
+# This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image,
+# etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
+
 from django.shortcuts import render, redirect
 from .models import List
 from .forms import ListForm
