@@ -1,1 +1,1 @@
-# Django-To-Do-Note-Taking-App
+# Django-Note-Taking-App
