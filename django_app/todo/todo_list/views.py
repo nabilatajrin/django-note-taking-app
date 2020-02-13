@@ -5,10 +5,11 @@
 # etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
 
 from django.shortcuts import render, redirect
+from rest_framework.decorators import api_view
 from rest_framework.settings import api_settings
 
 from .models import List
-from .forms import ListForm
+from .forms import NoteForm
 from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -28,7 +29,7 @@ from todo_list import models
 
 def home(request):
     if request.method == 'POST':
-        form = ListForm(request.POST or None)
+        form = NoteForm(request.POST or None)
 
         if form.is_valid():
             form.save()
@@ -65,11 +66,11 @@ def edit(request, list_id):
     if request.method == 'POST':
         item = List.objects.get(pk=list_id)
 
-        form = ListForm(request.POST or None, instance=item)
+        form = NoteForm(request.POST or None, instance=item)
 
         if form.is_valid():
             form.save()
-            #all_items = List.objects.all
+            #all_items = Note.objects.all
             messages.success(request, ('Item Has Been Edited!'))
             return redirect('home')
     else:
@@ -81,12 +82,28 @@ class NoteApiView(APIView):
     def get(self, request):
         serializer = List()
 
-        return Response(serializer.data)
-        # return Response({'test': 'It worked!'})
+        # return Response(serializer.data)
+        return Response({'test': 'It worked!'})
 
 
+"""API"""
 
-    """test APIView"""
+class Get_collection(APIView):
+    def get(self, request):
+        if request.method == 'GET':
+            posts = List.objects.all()
+            serializer = NoteSerializer(posts, many=True)
+            return Response(serializer.data)
+
+
+# @api_view(['GET'])
+# def Get_collection(request):
+#     if request.method == 'GET':
+#         posts = List.objects.all()
+#         serializer = NoteSerializer(posts, many=True)
+#         return Response(serializer.data)
+
+    # """test APIView"""
     # serializers_class = serializers.HelloSerializer
     #
     # def get(self, request, format=None):
@@ -112,7 +129,7 @@ class NoteApiView(APIView):
     #
     # def delete(selfself, request, pk):
     #     """Delete an object"""
-    #     item = List.objects.get(pk=pk)
+    #     item = Note.objects.get(pk=pk)
     #     item.delete()
     #     return Response(status=status.HTTP_204_NO_CONTENT)
     #     # return Response({'method': 'DELETE'})

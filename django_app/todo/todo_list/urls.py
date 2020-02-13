@@ -11,5 +11,5 @@ from todo_list import views
 urlpatterns = [
     path('hello-view/', views.NoteApiView.as_view()),
     path('login/', views.UserLoginApiView.as_view()),
-
+    path('list/', views.Get_collection.as_view()),
 ]
