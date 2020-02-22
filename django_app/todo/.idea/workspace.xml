@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todo/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0002_addnote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0003_note.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0004_auto_20200219_0741.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo_list/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/migrations/0002_addnote.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/migrations/0003_note.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/migrations/0004_auto_20200219_0741.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
@@ -46,7 +47,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MediumClone-master/medium" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/todo_list" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -98,22 +99,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1580620999233" />
-    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1582098779415">
+    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1582386122907">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1582098779415" />
+    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1582386122907" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo_list/views.py</url>
-          <line>32</line>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo/settings.py</url>
-          <line>126</line>
+          <line>125</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

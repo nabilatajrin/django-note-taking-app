@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'todo_list',
-    'todo',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +124,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # AUTH_USER_MODEL = 'todo_list.List'
+AUTH_USER_MODEL = 'todo_list.UserProfile'
+
 
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
@@ -134,3 +135,6 @@ STATICFILES_DIRS = [
 # middlewares (security), static files (css,js), database settings and so on. Every Django project must have a settings
 # file. By convention, Django puts it in your website app, but it doesn’t have to live there. There are proponents for
 # other structures, but here we’re going to stick to the default.
+
+
+

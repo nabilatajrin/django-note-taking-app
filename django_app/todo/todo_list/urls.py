@@ -14,6 +14,7 @@ from todo_list.views import ArticleView
 router = DefaultRouter() #create viewsets in views
 router.register('add-note', views.AddNoteViewSet, basename='add-note')
 router.register('test-note', views.TestNoteViewSet, basename='test-note')
+router.register('feed', views.UserProfileFeedViewSet)
 
 # router.register('list', views.AddNoteViewSet, basename='list')
 # router.register('edit', views.AddNoteViewSet, basename='edit')
@@ -28,6 +29,7 @@ urlpatterns = [
     # path('edit/', views.Get_collection.as_view()),
     # path('delete/', views.Get_collection.as_view()),
     path('articles/', ArticleView.as_view()),
+
 
     path('', include(router.urls))
 ]
