@@ -8,12 +8,12 @@ from django.shortcuts import render, redirect
 from rest_framework.decorators import api_view
 from rest_framework.settings import api_settings
 
-from .models import List
+from .models import List, TestNote, Article
 from .forms import NoteForm
 from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status, permissions
 from rest_framework import viewsets
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
@@ -21,7 +21,10 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework import viewsets
 
 from todo_list.serializers import NoteSerializer
-from todo_list import models
+from todo_list import models, serializers
+from .serializers import ArticleSerializer
+
+
 # from todo_list import permissions
 
 
@@ -78,17 +81,17 @@ def edit(request, list_id):
         return render(request, 'edit.html', {'item': item})
 
 
-class NoteApiView(APIView):
-    def get(self, request):
-        serializer = List()
-
-        # return Response(serializer.data)
-        return Response({'test': 'It worked!'})
+# class NoteApiView(APIView):
+#     def get(self, request):
+#         serializer = List()
+#
+#         # return Response(serializer.data)
+#         return Response({'test': 'It worked!'})
 
 
 """API"""
 
-class Get_collection(APIView):
+class Get_collection(APIView): #err
     def get(self, request):
         if request.method == 'GET':
             posts = List.objects.all()
@@ -96,48 +99,44 @@ class Get_collection(APIView):
             return Response(serializer.data)
 
 
-# @api_view(['GET'])
-# def Get_collection(request):
-#     if request.method == 'GET':
-#         posts = List.objects.all()
-#         serializer = NoteSerializer(posts, many=True)
-#         return Response(serializer.data)
-
-    # """test APIView"""
-    # serializers_class = serializers.HelloSerializer
-    #
-    # def get(self, request, format=None):
-    #     """returns a list of APIView features"""
-    #     an_apiview = [
-    #         'Uses HTTP methods as function(get, post, patch, put, delete)',
-    #     ]
-    #     return Response({'message': 'Hello!', 'an_apiview': an_apiview})
-    #
-    # def post(self, request):
-    #     """create a hello message with our name"""
-    #     serializer = self.serializers_class(data=request.data)
-    #
-    #     if serializer.is_valid():
-    #         name = serializer.validated_data.get('name')
-    #         message = f'Hello{name}'
-    #         return Response({'message': message})
-    #     else:
-    #         return Response(
-    #             serializer.errors,
-    #             status = status.HTTP_400_BAD_REQUEST
-    #         )
-    #
-    # def delete(selfself, request, pk):
-    #     """Delete an object"""
-    #     item = Note.objects.get(pk=pk)
-    #     item.delete()
-    #     return Response(status=status.HTTP_204_NO_CONTENT)
-    #     # return Response({'method': 'DELETE'})
-
 
 class UserLoginApiView(ObtainAuthToken):
-    """handle user authentication tokens"""
-    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+   """Handle creating user authentication tokens"""
+   renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
 
 
+class AddNoteViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AddNoteApiSerializer
+    queryset = models.List.objects.all()
 
+    # """Handles creating, reading and updating profile feed items"""
+    # authentication_classes = (TokenAuthentication,)
+    # serializer_class = serializers.NoteSerializer
+    # queryset = models.AddNote.objects.all()
+    #
+    # def perform_create(self, serializer):
+    #     """Sets the user profile to the logged in user"""
+    #     serializer.save(user_profile=self.request.user)
+
+
+class TestNoteViewSet(viewsets.ModelViewSet):
+    queryset = List.objects.all()
+    serializer_class = serializers.List
+
+    def perform_create(self, serializer):
+        """Sets the user profile to the logged in user"""
+        serializer.save(title=self.request.user)
+
+
+# class ArticleView(APIView):
+#     def get(self, request):
+#         articles = Article.objects.all()
+#         return Response({"articles": articles})
+
+
+class ArticleView(APIView):
+    def get(self, request):
+        articles = Article.objects.all()
+        # the many param informs the serializer that it will be serializing more than a single article.
+        serializer = ArticleSerializer(articles, many=True)
+        return Response({"articles": serializer.data})

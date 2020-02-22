@@ -1,0 +1,12 @@
+-can login through api uname: nabila, pw: 12345678. but shows err:
+    "detail": "CSRF Failed: CSRF token missing or incorrect."
+
+
+Steps:
+-install venv, install python, django
+-add app in settings INSTALLED_APPS
+-create a model
+-now integrate serializer. serializer will convert ... into json. Serializing Django objects. Django's serialization
+framework provides a mechanism for “translating” Django models into other formats. Usually these other formats will be
+text-based and used for sending Django data over a wire, but it's possible for a serializer to handle any format
+(text-based or not).

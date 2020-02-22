@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post-2019.4.13.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post-2019.4.13.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post-2019.4.13.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post-2019.4.13.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post-2019.4.13.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/python3.6/site-packages/post/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0002_addnote.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0003_note.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo_list/migrations/0004_auto_20200219_0741.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
     </list>
@@ -48,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MediumClone-master/medium" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -84,38 +82,38 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="412" y="201" width="598" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1581577763830" />
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1581331691473">
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1582105073660">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1581331691473" />
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1582105073660" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1581404663808">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1581404663808" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581402195687">
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1582021334161">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1581402195687" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1582021334161" />
     <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1580620999233">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1580620999233" />
-    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1581578480184">
+    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1582098779415">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1581578480184" />
+    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1582098779415" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo_list/views.py</url>
-          <line>29</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo/settings.py</url>
-          <line>125</line>
+          <line>126</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

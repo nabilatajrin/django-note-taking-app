@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-from todo_list.views import NoteApiView
+# from todo_list.views import NoteApiView
 from todo_list import views
 
 urlpatterns = [
@@ -14,5 +14,8 @@ urlpatterns = [
     path('edit/<list_id>', views.edit, name='edit'),
 
     path('api/', include('todo_list.urls')),
-    url(r'^todo_list/api/', NoteApiView.as_view())
+
+    # url(r'^todo_list/api/', NoteApiView.as_view())
 ]
+
+
