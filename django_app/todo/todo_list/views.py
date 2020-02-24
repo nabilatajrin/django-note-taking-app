@@ -67,11 +67,14 @@ def edit(request, list_id):
 
 
 #-------------------------------API--------------------------------------
-class UserLoginApiView(ObtainAuthToken):
-   """Handle creating user authentication tokens"""
-   renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
-
-
 class ContactViewSet(viewsets.ModelViewSet):
    serializer_class = ContactSerializer
    queryset = List.objects.all()
+
+   # def delete(self, request, *args, **kwargs):
+   #     return self.destroy(request, *args, **kwargs)
+
+
+class UserLoginApiView(ObtainAuthToken):
+   """Handle creating user authentication tokens"""
+   renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
