@@ -27,6 +27,8 @@ from .serializers import ArticleSerializer
 from todo_list import permissions
 
 
+from .serializers import ContactSerializer
+
 # Create your views here.
 
 def home(request):
@@ -144,14 +146,27 @@ class ArticleView(APIView):
 
 class UserProfileFeedViewSet(viewsets.ModelViewSet):
     """Handles creating, reading and updating profile feed items"""
-    authentication_classes = (TokenAuthentication,)
-    serializer_class = serializers.ProfileFeedItemSerializer
-    queryset = models.ProfileFeedItem.objects.all()
-    permission_classes = (
-        permissions.UpdateOwnStatus,
-        IsAuthenticatedOrReadOnly
-    )
+    # authentication_classes = (TokenAuthentication,)
+
+    queryset = models.List.objects.all()
+    serializer_class = serializers.NoteSerializer
+
+    # queryset = models.ProfileFeedItem.objects.all()
+    # serializer_class = serializers.ProfileFeedItemSerializer
+
+    # permission_classes = (
+    #     permissions.UpdateOwnStatus,
+    #     IsAuthenticatedOrReadOnly
+    # )
 
     def perform_create(self, serializer):
         """Sets the user profile to the logged in user"""
-        serializer.save(user_profile=self.request.user)
+        # serializer.save(user_profile=self.request.user)
+        serializer.save(item=self.request.user)
+        # serializer.save()
+
+
+
+class ContactViewSet(viewsets.ModelViewSet):
+   serializer_class = ContactSerializer
+   queryset = List.objects.all()
