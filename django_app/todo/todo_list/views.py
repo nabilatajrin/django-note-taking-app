@@ -66,7 +66,7 @@ def edit(request, list_id):
         return render(request, 'edit.html', {'item': item})
 
 
-"""API"""
+#-------------------------------API--------------------------------------
 class UserLoginApiView(ObtainAuthToken):
    """Handle creating user authentication tokens"""
    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
