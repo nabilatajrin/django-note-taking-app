@@ -73,16 +73,6 @@ def edit(request, list_id):
 
 
 """API"""
-
-class Get_collection(APIView): #err
-    def get(self, request):
-        if request.method == 'GET':
-            posts = List.objects.all()
-            serializer = NoteSerializer(posts, many=True)
-            return Response(serializer.data)
-
-
-
 class UserLoginApiView(ObtainAuthToken):
    """Handle creating user authentication tokens"""
    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
