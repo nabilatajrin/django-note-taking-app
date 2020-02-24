@@ -123,8 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# AUTH_USER_MODEL = 'todo_list.List'
-# AUTH_USER_MODEL = 'todo_list.UserProfile'
 
 
 STATICFILES_DIRS = [

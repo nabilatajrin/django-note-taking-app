@@ -15,7 +15,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework import viewsets
 
 from todo_list.serializers import NoteSerializer
-from todo_list import models, serializers
+
 from .models import List
 from .serializers import ContactSerializer
 
@@ -86,12 +86,6 @@ class Get_collection(APIView): #err
 class UserLoginApiView(ObtainAuthToken):
    """Handle creating user authentication tokens"""
    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
-
-
-# class AddNoteViewSet(viewsets.ModelViewSet):
-#     serializer_class = serializers.AddNoteApiSerializer
-#     queryset = models.List.objects.all()
-
 
 
 class ContactViewSet(viewsets.ModelViewSet):

@@ -2,9 +2,7 @@
 # and it's done by editing your project url.py file.
 
 # urls.py contains project-level URL configurations. By default, this contains a single URL pattern for the admin.
-from django.db import router
 from django.urls import path, include
-from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 
 from todo_list import views
@@ -16,7 +14,6 @@ router.register(r'contacts', ContactViewSet, basename='contact')
 
 
 urlpatterns = [
-    # path('hello-view/', views.NoteApiView.as_view()),
     path('login/', views.UserLoginApiView.as_view()),
     path('', include(router.urls))
 ]
