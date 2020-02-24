@@ -9,10 +9,9 @@ from rest_framework.routers import DefaultRouter
 
 from todo_list import views
 # from . import views
-from todo_list.views import ArticleView, ContactViewSet
+from todo_list.views import ContactViewSet
 
 router = DefaultRouter() #create viewsets in views
-router.register('feed', views.UserProfileFeedViewSet)
 router.register(r'contacts', ContactViewSet, basename='contact')
 
 

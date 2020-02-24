@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/permissions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
@@ -78,6 +80,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="412" y="201" width="598" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1581577763830" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582533932554">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1582533932554" />
     <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1582105073660">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -104,7 +110,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo_list/views.py</url>
-          <line>33</line>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

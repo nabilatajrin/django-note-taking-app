@@ -5,28 +5,18 @@
 # etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
 
 from django.shortcuts import render, redirect
-from rest_framework.decorators import api_view
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.settings import api_settings
-
-from .models import List, TestNote, Article
 from .forms import NoteForm
 from django.contrib import messages
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status, permissions
-from rest_framework import viewsets
-from rest_framework.authentication import TokenAuthentication
-from rest_framework import filters
+
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework import viewsets
 
 from todo_list.serializers import NoteSerializer
 from todo_list import models, serializers
-from .serializers import ArticleSerializer
-from todo_list import permissions
-
-
+from .models import List
 from .serializers import ContactSerializer
 
 # Create your views here.
@@ -82,14 +72,6 @@ def edit(request, list_id):
         return render(request, 'edit.html', {'item': item})
 
 
-# class NoteApiView(APIView):
-#     def get(self, request):
-#         serializer = List()
-#
-#         # return Response(serializer.data)
-#         return Response({'test': 'It worked!'})
-
-
 """API"""
 
 class Get_collection(APIView): #err
@@ -106,64 +88,9 @@ class UserLoginApiView(ObtainAuthToken):
    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
 
 
-class AddNoteViewSet(viewsets.ModelViewSet):
-    serializer_class = serializers.AddNoteApiSerializer
-    queryset = models.List.objects.all()
-
-    # """Handles creating, reading and updating profile feed items"""
-    # authentication_classes = (TokenAuthentication,)
-    # serializer_class = serializers.NoteSerializer
-    # queryset = models.AddNote.objects.all()
-    #
-    # def perform_create(self, serializer):
-    #     """Sets the user profile to the logged in user"""
-    #     serializer.save(user_profile=self.request.user)
-
-
-class TestNoteViewSet(viewsets.ModelViewSet):
-    queryset = List.objects.all()
-    serializer_class = serializers.List
-
-    def perform_create(self, serializer):
-        """Sets the user profile to the logged in user"""
-        serializer.save(title=self.request.user)
-
-
-# class ArticleView(APIView):
-#     def get(self, request):
-#         articles = Article.objects.all()
-#         return Response({"articles": articles})
-
-
-class ArticleView(APIView):
-    def get(self, request):
-        articles = Article.objects.all()
-        # the many param informs the serializer that it will be serializing more than a single article.
-        serializer = ArticleSerializer(articles, many=True)
-        return Response({"articles": serializer.data})
-
-
-
-class UserProfileFeedViewSet(viewsets.ModelViewSet):
-    """Handles creating, reading and updating profile feed items"""
-    # authentication_classes = (TokenAuthentication,)
-
-    queryset = models.List.objects.all()
-    serializer_class = serializers.NoteSerializer
-
-    # queryset = models.ProfileFeedItem.objects.all()
-    # serializer_class = serializers.ProfileFeedItemSerializer
-
-    # permission_classes = (
-    #     permissions.UpdateOwnStatus,
-    #     IsAuthenticatedOrReadOnly
-    # )
-
-    def perform_create(self, serializer):
-        """Sets the user profile to the logged in user"""
-        # serializer.save(user_profile=self.request.user)
-        serializer.save(item=self.request.user)
-        # serializer.save()
+# class AddNoteViewSet(viewsets.ModelViewSet):
+#     serializer_class = serializers.AddNoteApiSerializer
+#     queryset = models.List.objects.all()
 
 
 

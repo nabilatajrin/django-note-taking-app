@@ -1,8 +1,7 @@
 from rest_framework import serializers, viewsets
 
 from todo_list import models
-from todo_list.models import List, TestNote
-
+from todo_list.models import List
 
 class NoteSerializer(serializers.Serializer):
     """Serializers a name field for testing our APIView"""
@@ -14,49 +13,49 @@ class NoteSerializer(serializers.Serializer):
 
 
 
-class AddNoteApiSerializer(serializers.Serializer):
-    """Serializes a user profile object"""
-
-    class Meta:
-        model = models.TestNote
-        fields = ('id', 'note')
-        # extra_kwargs = {
-        #     'password': {
-        #         'write_only': True,
-        #         'style': {'input_type': 'password'}
-        #     }
-        # }
-
-    # def create(self, validated_data):
-    #     """Create and return a new post"""
-    #     user = models.AddNote.objects.create_user(
-    #         note = validated_data['note']
-    #     )
-    #
-    #     return user
-
-    #AddNote in model
-
-class TestNoteSerialiser(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = TestNote
-        fields = ('id', 'title')
-
-
-class ArticleSerializer(serializers.Serializer):
-    title = serializers.CharField(max_length=120)
-    description = serializers.CharField()
-    body = serializers.CharField()
-
-
-class ProfileFeedItemSerializer(serializers.ModelSerializer):
-    """Serializes profile feed items"""
-
-    class Meta:
-        model = models.ProfileFeedItem
-        fields = ('id', 'status_text')
-        # fields = ('id', 'user_profile', 'status_text', 'created_on')
-        # extra_kwargs = {'user_profile': {'read_only': True}}
+# class AddNoteApiSerializer(serializers.Serializer):
+#     """Serializes a user profile object"""
+#
+#     class Meta:
+#         model = models.TestNote
+#         fields = ('id', 'note')
+#         # extra_kwargs = {
+#         #     'password': {
+#         #         'write_only': True,
+#         #         'style': {'input_type': 'password'}
+#         #     }
+#         # }
+#
+#     # def create(self, validated_data):
+#     #     """Create and return a new post"""
+#     #     user = models.AddNote.objects.create_user(
+#     #         note = validated_data['note']
+#     #     )
+#     #
+#     #     return user
+#
+#     #AddNote in model
+#
+# class TestNoteSerialiser(serializers.HyperlinkedModelSerializer):
+#     class Meta:
+#         model = TestNote
+#         fields = ('id', 'title')
+#
+#
+# class ArticleSerializer(serializers.Serializer):
+#     title = serializers.CharField(max_length=120)
+#     description = serializers.CharField()
+#     body = serializers.CharField()
+#
+#
+# class ProfileFeedItemSerializer(serializers.ModelSerializer):
+#     """Serializes profile feed items"""
+#
+#     class Meta:
+#         model = models.ProfileFeedItem
+#         fields = ('id', 'status_text')
+#         # fields = ('id', 'user_profile', 'status_text', 'created_on')
+#         # extra_kwargs = {'user_profile': {'read_only': True}}
 
 
 class ContactSerializer(serializers.ModelSerializer):
