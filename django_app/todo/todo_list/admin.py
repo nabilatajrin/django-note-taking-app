@@ -3,7 +3,7 @@
 
 from django.contrib import admin
 from .models import List
-from todo_list import models
+
 
 # Register your models here.
 admin.site.register(List)
