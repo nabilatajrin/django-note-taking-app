@@ -5,11 +5,11 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from todo_list import views
-from todo_list.views import ContactViewSet
+from todo_list.views import NoteViewSet
 
 
 router = DefaultRouter() #create viewsets in views
-router.register(r'contacts', ContactViewSet, basename='contact')
+router.register(r'notes', NoteViewSet, basename='notes')
 
 
 urlpatterns = [
