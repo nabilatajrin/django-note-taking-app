@@ -9,7 +9,7 @@ class NoteSerializer(serializers.Serializer):
         fields = ('id', 'todo_text', 'done')
 
 
-class NoteSerializer(serializers.ModelSerializer):
+class NoteApiSerializer(serializers.ModelSerializer):
    class Meta:
        model = List
        fields = '__all__'

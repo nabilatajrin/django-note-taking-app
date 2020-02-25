@@ -11,7 +11,7 @@ from django.contrib import messages
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework import viewsets
 from .models import List
-from .serializers import NoteSerializer
+from .serializers import NoteApiSerializer
 
 
 # Create your views here.
@@ -68,7 +68,7 @@ def edit(request, list_id):
 
 #-------------------------------API--------------------------------------
 class NoteViewSet(viewsets.ModelViewSet):
-   serializer_class = NoteSerializer
+   serializer_class = NoteApiSerializer
    queryset = List.objects.all()
 
    # def delete(self, request, *args, **kwargs):
