@@ -15,13 +15,13 @@ from .serializers import NoteApiSerializer
 
 
 # Create your views here.
-def home(request):
+def home(request): #requesting the web page
     if request.method == 'POST':
         form = NoteForm(request.POST or None)
 
         if form.is_valid():
             form.save()
-            all_items = List.objects.all
+            # all_items = List.objects.all
             messages.success(request, ('Item has been added to list!'))
             return redirect('home')
     else:

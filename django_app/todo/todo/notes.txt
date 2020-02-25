@@ -10,3 +10,8 @@ Steps:
 framework provides a mechanism for “translating” Django models into other formats. Usually these other formats will be
 text-based and used for sending Django data over a wire, but it's possible for a serializer to handle any format
 (text-based or not).
+
+
+-urls.py >> where they are
+-views.py >> what they are
+-The Django template language like Smarty or Jinja2 etc, which control the logic, inheritance of the template.

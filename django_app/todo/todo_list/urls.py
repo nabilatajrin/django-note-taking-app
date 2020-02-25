@@ -9,7 +9,7 @@ from todo_list.views import NoteViewSet
 
 
 router = DefaultRouter() #create viewsets in views
-router.register(r'notes', NoteViewSet, basename='notes')
+router.register('notes', NoteViewSet)
 
 
 urlpatterns = [
