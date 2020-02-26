@@ -6,6 +6,10 @@ Steps:
 -install venv, install python, django
 -add app in settings INSTALLED_APPS
 -create a model
+
+
+
+
 -now integrate serializer. serializer will convert ... into json. Serializing Django objects. Django's serialization
 framework provides a mechanism for “translating” Django models into other formats. Usually these other formats will be
 text-based and used for sending Django data over a wire, but it's possible for a serializer to handle any format
@@ -15,3 +19,7 @@ text-based and used for sending Django data over a wire, but it's possible for a
 -urls.py >> where they are
 -views.py >> what they are
 -The Django template language like Smarty or Jinja2 etc, which control the logic, inheritance of the template.
+
+
+-python manage.py makemigrations <app>: Create the migrations (generate the SQL commands).
+-python manage.py migrate: Run the migrations (execute the SQL commands).

@@ -4,10 +4,10 @@
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +95,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="374" y="90" width="673" height="612" key="com.intellij.javaee.MapExternalResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1580620999233" />
-    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1582519392210">
+    <state x="364" y="128" width="704" height="576" key="find.popup" timestamp="1582698269106">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1582519392210" />
+    <state x="364" y="128" width="704" height="576" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1582698269106" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
