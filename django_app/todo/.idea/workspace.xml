@@ -4,10 +4,9 @@
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo_list/views.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

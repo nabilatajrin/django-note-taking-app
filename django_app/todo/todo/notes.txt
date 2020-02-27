@@ -23,3 +23,25 @@ text-based and used for sending Django data over a wire, but it's possible for a
 
 -python manage.py makemigrations <app>: Create the migrations (generate the SQL commands).
 -python manage.py migrate: Run the migrations (execute the SQL commands).
+
+
+-Web service APIs
+SOAP.
+XML-RPC.
+JSON-RPC.
+REST.
+
+
+Types of APIs
+There are four main types of APIs:
+
+-Open APIs: Also known as Public APIs, there are no restrictions to access these types of APIs because they are publicly
+available.
+-Partner APIs: One needs specific rights or licenses in order to access this type of APIs because they are not available
+to the public.
+-Internal APIs: Also known as Private APIs, only internal systems expose this type of API, which is, therefore, less
+known and often meant to be used inside the company. The company uses this type of API among the different internal
+teams to be able to improve its products and services.
+-Composite APIs: This type of API combines different data and service APIs. It is a sequence of tasks that run
+synchronously as a result of the execution and not at the request of a task. Its main uses are to speed up the process
+of execution and improve the performance of the listeners in the web interfaces.
