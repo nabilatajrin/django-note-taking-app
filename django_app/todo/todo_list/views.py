@@ -15,7 +15,6 @@ from .serializers import NoteApiSerializer
 
 
 # Create your views here.
-# class SomeClass(generics.ListCreateAPIView):
 def home(request): #requesting the web page
     if request.method == 'POST':
         form = NoteForm(request.POST or None)

@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6281968b-0330-4342-b4c3-bdecbf98d238" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/bin/python3.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../venv/bin/djangp-rest-framework/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list/views.py" afterDir="false" />
     </list>
@@ -38,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/todo_list" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Advancing-the-Blog-master" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -78,10 +92,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1582533932554" />
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1582105073660">
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1582963302209">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1582105073660" />
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1582963302209" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1581404663808">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -104,7 +118,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/todo_list/views.py</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

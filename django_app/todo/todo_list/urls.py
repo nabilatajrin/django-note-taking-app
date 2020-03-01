@@ -14,7 +14,6 @@ router.register('notes', NoteViewSet)
 
 urlpatterns = [
     path('login/', views.UserLoginApiView.as_view()),
-    # path('someurl', views.ProfileList.as_view()),
     path('', include(router.urls))
 
 ]

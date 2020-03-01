@@ -14,8 +14,6 @@ urlpatterns = [
     path('edit/<list_id>', views.edit, name='edit'),
 
     path('api/', include('todo_list.urls')),
-
-    # url(r'^todo_list/api/', NoteApiView.as_view())
 ]
 
 
