@@ -121,16 +121,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static_in_env/'
 
 
 
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
+        os.path.join(BASE_DIR, 'static_in_env'),
     ]
 
 # The settings file in Django, holds all the settings of your web app. It includes the secret key, templates directories,
-# middlewares (security), static files (css,js), database settings and so on. Every Django project must have a settings
+# middlewares (security), static_in_env files (css,js), database settings and so on. Every Django project must have a settings
 # file. By convention, Django puts it in your website app, but it doesn’t have to live there. There are proponents for
 # other structures, but here we’re going to stick to the default.
 
