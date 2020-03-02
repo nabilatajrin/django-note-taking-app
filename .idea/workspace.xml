@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8cba09d-4432-432e-a4f6-ebe7ea01e644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/django-note-taking-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_app/todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/django_app/todo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_app/todo/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_app/todo/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysite/django_app/todo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_app/todo" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,9 +43,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580713690993">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582378525476">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1580713690993" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1582378525476" />
   </component>
 </project>
