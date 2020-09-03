@@ -1,6 +1,6 @@
 # django-note-taking-app
-This is an note taking application developed using Django.
-<p>Features:
--Create new simple note.
--Edit/ update note.
--Delete note.<p>
+<p>This is an note taking application developed using Django.</p>
+<p>Features:</p>
+<p>-Create new simple note.</p>
+<p>-Edit/ update note.</p>
+<p>-Delete note.</p>
